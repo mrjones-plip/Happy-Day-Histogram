@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="../src/HappyDayHistogram.js" ></script>
-    <link rel="stylesheet" href="../src/HappyDayHistogram.css" />
+    <script src="../dist/HappyDayHistogram.min.js" ></script>
+    <link rel="stylesheet" href="../dist/HappyDayHistogram.min.css" />
 </head>
 <body>
 
 <h1>Happy Day Histogram Examples</h1>
 
-<h2> Commits over a day </h2>
+<h2> Commits over a day, starting at 5am </h2>
 <div id="histogram"></div>
 <script>
     let hours = [
@@ -25,15 +25,15 @@
         4,
         6,
 
-        0,
-        0,
-        12
+        4,
+        3,
+        12,
+        22
 
     ];
 
     new HappyDayHistogram('histogram', hours);
 </script>
-
 
 <h2> Minutes Online, denoting first and last minute in label, custom color </h2>
 <div id="histogram2"></div>
@@ -47,7 +47,7 @@
         5,
         20,
         50,
-        70,
+        60,
         40,
 
         0,
@@ -72,7 +72,10 @@
 
     new HappyDayHistogram('histogram2', hours, 'red', labels);
 </script>
-
+<style>
+    #histogram2 .dayHistogram .emptyTop { background-color: yellow; }
+    #histogram2 .dayHistogram .bar:hover {background-color: #ddd;}
+</style>
 
 
 </body>

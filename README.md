@@ -63,15 +63,12 @@ which is a more full-featured histogram library for visualizing a year.
    ints or floats and will not pad for missing or ``NULL`` days.
 5. Call HDH specifying target, data and CSS color: ``HappyDayHistogram('histogram', hours);`` . Your target must be an ID, not a class. 
 
-## Extras
+### Extras
 
-You can pass in a CSS color for the bars like this:
+**Bar Color** - Pass in the CSS value when you
+call HDH: ``HappyDayHistogram('histogram', hours, 'red');`` or ``HappyDayHistogram('histogram', hours, '#ddd');``. Default color is ``#043864``
 
-```javascript
-new HappyDayHistogram('histogram2', hours, 'aqua');
-```
-
-Additionally, you can pass in an array of `labels`. This will allow you, for example to denote minute of the first 
+**Custom Lables** - Pass in an array of `labels`. This will allow you, for example to denote minute of the first
 event like this:
 
 ```javascript
@@ -81,11 +78,6 @@ labels[23] = '11.57p'
 
 new HappyDayHistogram('histogram', hours, 'aqua', labels);
 ```
-
-### Syntax
-
-**Bar Color** - Pass in the CSS value when you
-call HDH: ``HappyDayHistogram('histogram', hours, 'red');`` or ``HappyDayHistogram('histogram', hours, '#ddd');``. Default color is ``#043864``
 
 **Histogram Height** -  _After_ you have included HDH's CSS, declare an update CSS entry for the height ``.dayHistogram .hour .chart { height: 25px; }``
 
@@ -99,3 +91,5 @@ for the background ``.dayHistogram .emptyTop { background-color: yellow; }``
 **Hover color entire bar, all the way to the top** - Again, _after_ you have included HDH's CSS, declare
  a ``hover`` psuedo class for just the entire.  Note that you'll need include
  the ID of the  DOM element for you histogram: ``#histogram .dayHistogram .bar:hover {background-color: #ddd;}``
+
+

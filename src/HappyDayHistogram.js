@@ -76,15 +76,16 @@ function HappyDayHistogram (targetId, hourData, color, labels ) {
         if(labels !== undefined && labels[i] !== undefined){
             label = labels[i];
         } else {
-            label = Number(i);
-            aOrP = 'a';
-            if (label === 0) {
-                label = 12;
-            } else if (label >= 12) {
-                label = i - 12;
-                aOrP = 'p';
+            if (i === 0) {
+                label = '12a';
+            } else if (i === 12) {
+                label = i + 'p';
+            } else if (i >= 12) {
+                label = Number(i - 12) + 'p';
+            } else {
+                label = i + 'a';
             }
-            label = label + aOrP;
+
         }
 
         finalHTML +=
