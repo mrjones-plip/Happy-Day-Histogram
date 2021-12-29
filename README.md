@@ -4,7 +4,11 @@
 
 Happy Day Histogram (HDH) is a simple JavaScript library for generating a
 client side histogram showing activity events per hour for 
-a day.  This JavaScript
+a day:
+
+![Happy Day Histogram screenshot](./happy.day.histogram.png)
+
+This JavaScript
 library uses no 3rd party libraries (eg D3 or jQuery). 
 The DOM elements used are only
 HTML (floating DIVs) and not any fancy Canvas or SVG. The final histogram is very 
