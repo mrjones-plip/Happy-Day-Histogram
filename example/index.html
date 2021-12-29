@@ -9,12 +9,36 @@
 <body>
 
 <h1>Happy Day Histogram Examples</h1>
-<a href="..">Version 1.4</a>
 
 <h2> Commits over a day </h2>
-<div id="histogram2"></div>
+<div id="histogram"></div>
 <script>
     let hours = [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        22,
+        33,
+        4,
+        6,
+
+        0,
+        0,
+        12
+
+    ];
+
+    new HappyDayHistogram('histogram', hours);
+</script>
+
+
+<h2> Minutes Online, denoting first and last minute in label, custom color </h2>
+<div id="histogram2"></div>
+<script>
+    hours = [
         0,
         0,
         1,
@@ -23,8 +47,7 @@
         5,
         20,
         50,
-        60,
-        40,
+        70,
         40,
 
         0,
@@ -43,8 +66,11 @@
         1,
         4
     ];
+    let labels = [];
+    labels[2] = '2.19a'
+    labels[23] = '11.57p'
 
-    new HappyDayHistogram('histogram2', hours, 'aqua');
+    new HappyDayHistogram('histogram2', hours, 'red', labels);
 </script>
 
 

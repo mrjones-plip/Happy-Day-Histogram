@@ -1,4 +1,4 @@
-# Happy Histogram
+# Happy Day Histogram
 
 ## What
 
@@ -16,7 +16,6 @@ This is a fork of the original [Happy Histogram](https://github.com/Packet-Clear
 which is a more full-featured histogram library for visualizing a year.
 
 ## How
-
 
 1. Download [the latest HDH](https://github.com/mrjones-plip/Happy-Day-Histogram) and
  grab the minified CSS and JS from the `dist` directory.
@@ -63,6 +62,25 @@ which is a more full-featured histogram library for visualizing a year.
    Careful!  Garbage in, garbage out - HDH will not validate any values, only accepts
    ints or floats and will not pad for missing or ``NULL`` days.
 5. Call HDH specifying target, data and CSS color: ``HappyDayHistogram('histogram', hours);`` . Your target must be an ID, not a class. 
+
+## Extras
+
+You can pass in a CSS color for the bars like this:
+
+```javascript
+new HappyDayHistogram('histogram2', hours, 'aqua');
+```
+
+Additionally, you can pass in an array of `labels`. This will allow you, for example to denote minute of the first 
+event like this:
+
+```javascript
+let labels = [];
+labels[2] = '2.19a'
+labels[23] = '11.57p'
+
+new HappyDayHistogram('histogram', hours, 'aqua', labels);
+```
 
 ### Syntax
 

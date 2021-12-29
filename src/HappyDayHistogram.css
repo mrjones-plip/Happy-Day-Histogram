@@ -22,6 +22,9 @@
     height: 50px;
     width: 100%;
 }
+.dayHistogram .hour .firstHour{
+    border-left: 1px solid #000;
+}
 .dayHistogram .bar,
 .dayHistogram .emptyTop,
 .dayHistogram .filledBottom,
