@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../src/HappyDayHistogram.js" ></script>
+    <link rel="stylesheet" href="../src/HappyDayHistogram.css" />
+</head>
+<body>
+
+<h1>Happy Day Histogram Examples</h1>
+<a href="..">Version 1.4</a>
+
+<h2> Commits over a day </h2>
+<div id="histogram2"></div>
+<script>
+    let hours = [
+        0,
+        0,
+        1,
+        2,
+        4,
+        5,
+        20,
+        50,
+        60,
+        40,
+        40,
+
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+
+        0,
+        0,
+        1,
+        4
+    ];
+
+    new HappyDayHistogram('histogram2', hours, 'aqua');
+</script>
+
+
+
+</body>
+</HTML>
+
