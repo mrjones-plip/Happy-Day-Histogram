@@ -63,8 +63,8 @@ which is a more full-featured histogram library for visualizing a year.
     ];
    ```
    
-   Careful!  Garbage in, garbage out - HDH will not validate any values, only accepts
-   ints or floats and will not pad for missing or ``NULL`` days.
+   Careful!  Garbage in, garbage out - HDH will do it's best to validate values (no more than 24 total, 
+   no more than 60/hr), but may fail.
 5. Call HDH specifying target, data and CSS color: ``HappyDayHistogram('histogram', hours);`` . Your target must be an ID, not a class. 
 
 ### Extras
