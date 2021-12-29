@@ -8,6 +8,8 @@ a day:
 
 ![Happy Day Histogram screenshot](./happy.day.histogram.png)
 
+See a [live example](https://mrjones-plip.github.io/Happy-Day-Histogram/example/)!
+
 This JavaScript
 library uses no 3rd party libraries (eg D3 or jQuery). 
 The DOM elements used are only
